@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости</title>
+    <link rel="stylesheet" href="assets/css/plugin/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/plugin/swiper.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center position-relative">
+                    <a href="./index.html" class="header-logo">
+                        <img src="assets/img/svg/logo.svg" alt="" class="d-none d-xl-block">
+                        <img src="assets/img/svg/logo2.svg" alt="" class="d-xl-none">
+                    </a>
+                    <div class="search">
+                        <div class="search-inp">
+                            <input type="text" class="search_inp" placeholder="Поиск">
+                            <span class="search-btn">
+                                <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16.6 18.9539L10.3 12.6539C9.8 13.0539 9.225 13.3705 8.575 13.6039C7.925 13.8372 7.23333 13.9539 6.5 13.9539C4.68333 13.9539 3.146 13.3249 1.888 12.0669C0.629333 10.8082 0 9.27052 0 7.45386C0 5.63719 0.629333 4.09952 1.888 2.84086C3.146 1.58286 4.68333 0.953857 6.5 0.953857C8.31667 0.953857 9.85433 1.58286 11.113 2.84086C12.371 4.09952 13 5.63719 13 7.45386C13 8.18719 12.8833 8.87886 12.65 9.52886C12.4167 10.1789 12.1 10.7539 11.7 11.2539L18 17.5539L16.6 18.9539ZM6.5 11.9539C7.75 11.9539 8.81267 11.5165 9.688 10.6419C10.5627 9.76652 11 8.70386 11 7.45386C11 6.20386 10.5627 5.14119 9.688 4.26586C8.81267 3.39119 7.75 2.95386 6.5 2.95386C5.25 2.95386 4.18733 3.39119 3.312 4.26586C2.43733 5.14119 2 6.20386 2 7.45386C2 8.70386 2.43733 9.76652 3.312 10.6419C4.18733 11.5165 5.25 11.9539 6.5 11.9539Z" fill="#727272"/>
+                                </svg>
+                            </span>
+                            <span class="search-voice">
+                                <svg width="15" height="21" viewBox="0 0 15 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.95463 13.0076C7.11809 13.0076 6.40704 12.7149 5.82146 12.1293C5.23589 11.5437 4.9431 10.8327 4.9431 9.99612V3.97307C4.9431 3.13654 5.23589 2.42548 5.82146 1.83991C6.40704 1.25433 7.11809 0.961548 7.95463 0.961548C8.79116 0.961548 9.50222 1.25433 10.0878 1.83991C10.6734 2.42548 10.9662 3.13654 10.9662 3.97307V9.99612C10.9662 10.8327 10.6734 11.5437 10.0878 12.1293C9.50222 12.7149 8.79116 13.0076 7.95463 13.0076ZM6.95078 20.0345V16.9477C5.21079 16.7135 3.77195 15.9355 2.63426 14.6138C1.49658 13.2921 0.927734 11.7528 0.927734 9.99612H2.93542C2.93542 11.3848 3.42496 12.5683 4.40404 13.5467C5.38245 14.5258 6.56598 15.0153 7.95463 15.0153C9.34327 15.0153 10.5271 14.5258 11.5062 13.5467C12.4846 12.5683 12.9738 11.3848 12.9738 9.99612H14.9815C14.9815 11.7528 14.4127 13.2921 13.275 14.6138C12.1373 15.9355 10.6985 16.7135 8.95847 16.9477V20.0345H6.95078ZM7.95463 11C8.23905 11 8.47763 10.9036 8.67037 10.7109C8.86243 10.5188 8.95847 10.2805 8.95847 9.99612V3.97307C8.95847 3.68865 8.86243 3.45007 8.67037 3.25733C8.47763 3.06527 8.23905 2.96923 7.95463 2.96923C7.6702 2.96923 7.43196 3.06527 7.23989 3.25733C7.04715 3.45007 6.95078 3.68865 6.95078 3.97307V9.99612C6.95078 10.2805 7.04715 10.5188 7.23989 10.7109C7.43196 10.9036 7.6702 11 7.95463 11Z" fill="#727272"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="search-info position-absolute">
+                            <p class="search-info__title">Возможно вы ищите:</p>
+                            <div class="d-flex flex-wrap">
+                               <a href="#" class="search-info__link">Популярное</a>
+                               <a href="#" class="search-info__link">Спецпроекты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="header-nav d-none d-lg-flex">
+                        <li><a href="./index.html">Главная</a></li>
+                        <li class="active"><a href="./news.html">Новости</a></li>
+                        <li><a href="./articles.html">Статьи</a></li>
+                        <li><a href="./sp-projects.html">Спецпроекты</a></li>
+                        <li><a href="./faq.html">Задай вопрос</a></li>
+                        <li><a href="#">Досье</a></li>
+                        <li><a href="./pdf.html">Газета в PDF</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <div class="header-social d-flex">
+                            <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="8" fill="#E1372C"/>
+                                    <path d="M12 0C9.62663 0 7.30655 0.703788 5.33316 2.02236C3.35977 3.34094 1.8217 5.21509 0.913451 7.4078C0.00519938 9.60051 -0.232441 12.0133 0.230582 14.3411C0.693605 16.6689 1.83649 18.8071 3.51472 20.4853C5.19295 22.1635 7.33115 23.3064 9.65892 23.7694C11.9867 24.2324 14.3995 23.9948 16.5922 23.0866C18.7849 22.1783 20.6591 20.6402 21.9776 18.6668C23.2962 16.6935 24 14.3734 24 12C24 8.8174 22.7357 5.76516 20.4853 3.51472C18.2348 1.26428 15.1826 0 12 0ZM17.5342 15.7453C17.2532 15.7847 15.8874 15.7453 15.8163 15.7453C15.4632 15.7488 15.1229 15.6133 14.869 15.3679C14.58 15.09 14.3195 14.7853 14.0432 14.4947C13.9597 14.4067 13.8694 14.3254 13.7732 14.2516C13.5474 14.0779 13.3247 14.1174 13.219 14.3826C13.1364 14.6702 13.0793 14.9645 13.0484 15.2621C13.0462 15.3243 13.0317 15.3855 13.0058 15.4421C12.9799 15.4987 12.9431 15.5497 12.8975 15.5921C12.8519 15.6344 12.7984 15.6674 12.74 15.6891C12.6817 15.7108 12.6196 15.7207 12.5574 15.7184C12.3711 15.7279 12.1847 15.7311 12 15.7184C11.3279 15.7157 10.666 15.5534 10.069 15.2447C9.42408 14.8844 8.86197 14.3927 8.41895 13.8016C7.7098 12.8658 7.0972 11.8607 6.59053 10.8016C6.56369 10.7495 6.03158 9.61737 6.01895 9.56368C5.98738 9.49004 5.98498 9.40714 6.01225 9.33179C6.03951 9.25645 6.0944 9.19428 6.1658 9.1579C6.26053 9.12158 8.01474 9.1579 8.04316 9.1579C8.17371 9.15605 8.3014 9.19617 8.40742 9.27235C8.51345 9.34853 8.59221 9.45674 8.63211 9.58105C8.95656 10.4101 9.3996 11.1877 9.94737 11.8895C10.0242 11.9829 10.1141 12.0648 10.2142 12.1326C10.24 12.1576 10.272 12.1753 10.3069 12.1838C10.3418 12.1924 10.3784 12.1914 10.4128 12.1811C10.4472 12.1708 10.4783 12.1516 10.5027 12.1253C10.5272 12.099 10.5443 12.0666 10.5521 12.0316C10.6216 11.8028 10.6625 11.5662 10.6737 11.3274C10.6832 10.8537 10.6737 10.5379 10.6468 10.0642C10.6564 9.90279 10.6019 9.74412 10.4952 9.62262C10.3885 9.50113 10.2382 9.42662 10.0768 9.41526C9.9379 9.39158 9.91895 9.27789 10.0153 9.16421C10.2 8.92895 10.4558 8.89105 10.7337 8.87684C11.1537 8.85316 11.5753 8.87684 11.9968 8.87684H12.0884C12.2735 8.87638 12.4582 8.8949 12.6395 8.93211C12.7455 8.95382 12.8417 9.0092 12.9136 9.09001C12.9856 9.17082 13.0296 9.27271 13.039 9.38053C13.0602 9.49984 13.0697 9.62094 13.0674 9.74211C13.0563 10.26 13.0311 10.7763 13.0247 11.2926C13.0209 11.4972 13.0394 11.7016 13.08 11.9021C13.1416 12.1768 13.3295 12.2463 13.5221 12.0474C13.7622 11.7892 13.9823 11.5131 14.1805 11.2216C14.5367 10.6921 14.8303 10.123 15.0553 9.52579C15.1768 9.21947 15.27 9.15158 15.6 9.15158H17.4616C17.5725 9.14988 17.6832 9.16424 17.79 9.19421C17.8276 9.20425 17.8628 9.22191 17.8933 9.2461C17.9239 9.2703 17.9491 9.30051 17.9674 9.33486C17.9858 9.36921 17.9969 9.40696 18.0001 9.44579C18.0032 9.48461 17.9984 9.52366 17.9858 9.56053C17.8773 9.95677 17.6905 10.3272 17.4363 10.65C17.0574 11.1868 16.6595 11.7095 16.2711 12.2384C16.2216 12.3058 16.1767 12.3765 16.1368 12.45C15.9916 12.7137 16.0026 12.8605 16.2126 13.0816C16.5505 13.4305 16.9121 13.7558 17.2374 14.1126C17.4769 14.3735 17.6935 14.6545 17.8847 14.9526C18.1247 15.3284 17.9779 15.6821 17.5342 15.7453Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="11" cy="11" r="10" fill="#E1372C"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 0C4.92508 0 0 4.92508 0 11C0 17.0749 4.92508 22 11 22C17.0749 22 22 17.0749 22 11C22 4.92508 17.0749 0 11 0ZM16.0987 7.48086C15.9332 9.22024 15.217 13.4411 14.8526 15.3893C14.6983 16.2138 14.3945 16.4901 14.1006 16.5172C13.4621 16.5761 12.977 16.0948 12.3582 15.6892C11.3902 15.0545 10.8432 14.6596 9.90344 14.0405C8.81719 13.3246 9.52145 12.9314 10.1402 12.2886C10.3022 12.1202 13.1166 9.56012 13.1712 9.32809C13.1781 9.29887 13.1845 9.19059 13.1201 9.13344C13.0556 9.07629 12.9607 9.09606 12.8923 9.11152C12.7952 9.13344 11.2484 10.1557 8.25258 12.1782C7.81344 12.4798 7.41598 12.6264 7.05934 12.6191C6.6666 12.6105 5.91121 12.3969 5.34961 12.2143C4.66082 11.9904 4.1134 11.8718 4.16109 11.4916C4.18559 11.2935 4.45844 11.0911 4.97922 10.884C8.18598 9.48664 10.3241 8.56582 11.394 8.12066C14.4491 6.85012 15.0838 6.62922 15.4975 6.62191C16.0158 6.61276 16.1409 7.04056 16.0987 7.48086Z" fill="white"/>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <img src="assets/img/svg/ok.svg" alt="">
+                            </a>
+                        </div>
+    
+                        <div class="search-button d-lg-none">
+                            <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.6 18.9539L10.3 12.6539C9.8 13.0539 9.225 13.3705 8.575 13.6039C7.925 13.8372 7.23333 13.9539 6.5 13.9539C4.68333 13.9539 3.146 13.3249 1.888 12.0669C0.629333 10.8082 0 9.27052 0 7.45386C0 5.63719 0.629333 4.09952 1.888 2.84086C3.146 1.58286 4.68333 0.953857 6.5 0.953857C8.31667 0.953857 9.85433 1.58286 11.113 2.84086C12.371 4.09952 13 5.63719 13 7.45386C13 8.18719 12.8833 8.87886 12.65 9.52886C12.4167 10.1789 12.1 10.7539 11.7 11.2539L18 17.5539L16.6 18.9539ZM6.5 11.9539C7.75 11.9539 8.81267 11.5165 9.688 10.6419C10.5627 9.76652 11 8.70386 11 7.45386C11 6.20386 10.5627 5.14119 9.688 4.26586C8.81267 3.39119 7.75 2.95386 6.5 2.95386C5.25 2.95386 4.18733 3.39119 3.312 4.26586C2.43733 5.14119 2 6.20386 2 7.45386C2 8.70386 2.43733 9.76652 3.312 10.6419C4.18733 11.5165 5.25 11.9539 6.5 11.9539Z" fill="#727272"/>
+                            </svg>
+                        </div>
+    
+                        <div class="menu-btn d-lg-none">
+                            <img src="assets/img/svg/menu.svg" alt="">
+                            <img src="assets/img/svg/close.svg" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="menu-nav">
+                            <li><a href="./index.html"><span>Главная</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li class="active"><a href="./news.html"><span>Новости</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li><a href="./articles.html"><span>Статьи</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li><a href="./sp-projects.html"><span>Спецпроекты</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li><a href="./faq.html"><span>Задай вопрос</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li><a href="#"><span>Досье</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                            <li><a href="./pdf.html"><span>Газета в PDF</span> <img src="assets/img/svg/arrow-mini.svg" alt=""> </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="posts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="posts-box">
+                            <h1 class="title-text text-center">Новости</h1>
+
+                            <div class="swiper swiper-posts">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n1.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Материалы</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Новые теплосети проложат на улице Степана Разина в Калуге</a>
+                                                    <p class="post-text">Мы стремимся жить в условиях верховенства закона, что само по себе без знания его невозможноС вопросами права мы сталкиваемся ежедневно: от бытовых мелочей при покупке в магазине до оформления сделок с землей и имуществом.</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 17:21</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n2.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Порядка 10000 книг передали в Первомайск калужские журналисты</a>
+                                                    <p class="post-text">Литературу для акции «Книги Донбассу» собирали в региональном отделении Союза журналистов России. Об этом сообщил губернатор Калужской области Владислав Шапша....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 16:29</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n3.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Проишествия</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Четверо пожарных тушили загоревшуюся иномарку в Барятинском районе</a>
+                                                    <p class="post-text">Инцидент случился в 09:18 на 46-м километре автодороги Киров— Барятино. Об этом сообщили в ГУ МЧС России по Калужской области....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Ксения Куликова</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 15:17</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n4.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Благоустройство</div>
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Политика</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Рабочие начали благоустраивать зону отдыха в Козельске</a>
+                                                    <p class="post-text">Литературу для акции «Книги Донбассу» собирали в региональном отделении Союза журналистов России. Об этом сообщил губернатор Калужской области Владислав Шапша....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>29.02.2024</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n5.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">12-летний ребёнок пострадал в ДТП в центре Калуги</a>
+                                                    <p class="post-text">Авария случилась в 10:06 на улице Рылеева, 36. Об этом сообщили в ГУ МВД России по Калужской области. В ДТП....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Ксения Куликова</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>18.10.2023 21:23</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n6.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Рабочие начали асфальтировать дорогу на Маршала Жукова в Калуге</a>
+                                                    <p class="post-text">Городской голова Калуги Дмитрий Денисов сообщил, что проверил ход ремонтных работ на одной из улиц областного центра. В ночь с...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>11.10.2023 19:27</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n7.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Благоустройство</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Часть помещений бывшего «Юбилейного» в Калуге отдадут под офис банка</a>
+                                                    <p class="post-text">Специалисты закончат основные ремонтные работы в мае. Об этом сообщил городской голова Калуги Дмитрий Денисов. У здания рабочие обновят фасад...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:44</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n8.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">В Калужский аэропорт прилетел первый рейс из Калининграда</a>
+                                                    <p class="post-text">Лайнер компании «Северсталь» будет перевозить пассажиров в самый западный регион России и обратно. Об этом сообщил корреспондент "Знамени". Самолёт по...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n9.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">На площади Победы в Калуге может измениться место пешеходного перехода</a>
+                                                    <p class="post-text">Специалисты предлагают перенести зебру для безопасности пешеходов, сообщил городской голова Калуги Дмитрий Денисов. Градоначальник поручил уделить особое внимание подготовке к...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Сергей СЫЧЁВ</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:41</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n10.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Автомобили</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">За неделю более 50 тысяч раз в Калужской области автолюбители нарушили ПДД</a>
+                                                    <p class="post-text">Самым частым нарушением стало превышение скорости — 33245 раз. Об этом сообщили в Центре безопасности дорожного движения Калужской области. Более...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>29.04.2024 14:00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n11.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">На месте украденного космонавтика в калужском парке появился новый</a>
+                                                    <p class="post-text">Копию космонавтика-офтальмолога установили на прежнем месте. Об этом сообщил корреспондент "Знамени". На фигурку уже приходят посмотреть калужане и гости города....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>09.02.2024 12:46</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n12.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">ДТП</div>
+                                                        <div class="hashtag">Проишествия</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">В центре Калуги иномарка сбила самокатчика</a>
+                                                    <p class="post-text">Инцидент произошёл в 23:56 на улице Гагарина, сообщили в ГУ МЧС России по Калужской области. Иномарка Nissan Juke наехала на...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:37</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n12.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">ДТП</div>
+                                                        <div class="hashtag">Проишествия</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">В центре Калуги иномарка сбила самокатчика</a>
+                                                    <p class="post-text">Инцидент произошёл в 23:56 на улице Гагарина, сообщили в ГУ МЧС России по Калужской области. Иномарка Nissan Juke наехала на...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:37</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n1.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                        <div class="hashtag">Новости</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Новые теплосети проложат на улице Степана Разина в Калуге</a>
+                                                    <p class="post-text">Мы стремимся жить в условиях верховенства закона, что само по себе без знания его невозможноС вопросами права мы сталкиваемся ежедневно: от бытовых мелочей при покупке в магазине до оформления сделок с землей и имуществом.</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 17:21</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n2.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Порядка 10000 книг передали в Первомайск калужские журналисты</a>
+                                                    <p class="post-text">Литературу для акции «Книги Донбассу» собирали в региональном отделении Союза журналистов России. Об этом сообщил губернатор Калужской области Владислав Шапша....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 16:29</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n6.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Рабочие начали асфальтировать дорогу на Маршала Жукова в Калуге</a>
+                                                    <p class="post-text">Городской голова Калуги Дмитрий Денисов сообщил, что проверил ход ремонтных работ на одной из улиц областного центра. В ночь с...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>11.10.2023 19:27</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n3.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Проишествия</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Четверо пожарных тушили загоревшуюся иномарку в Барятинском районе</a>
+                                                    <p class="post-text">Инцидент случился в 09:18 на 46-м километре автодороги Киров— Барятино. Об этом сообщили в ГУ МЧС России по Калужской области....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Ксения Куликова</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>30.04.2024 15:17</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n4.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Благоустройство</div>
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Политика</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Рабочие начали благоустраивать зону отдыха в Козельске</a>
+                                                    <p class="post-text">Литературу для акции «Книги Донбассу» собирали в региональном отделении Союза журналистов России. Об этом сообщил губернатор Калужской области Владислав Шапша....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>29.02.2024</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n5.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">12-летний ребёнок пострадал в ДТП в центре Калуги</a>
+                                                    <p class="post-text">Авария случилась в 10:06 на улице Рылеева, 36. Об этом сообщили в ГУ МВД России по Калужской области. В ДТП....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Ксения Куликова</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>18.10.2023 21:23</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n7.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Благоустройство</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">Часть помещений бывшего «Юбилейного» в Калуге отдадут под офис банка</a>
+                                                    <p class="post-text">Специалисты закончат основные ремонтные работы в мае. Об этом сообщил городской голова Калуги Дмитрий Денисов. У здания рабочие обновят фасад...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:44</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n8.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">В Калужский аэропорт прилетел первый рейс из Калининграда</a>
+                                                    <p class="post-text">Лайнер компании «Северсталь» будет перевозить пассажиров в самый западный регион России и обратно. Об этом сообщил корреспондент "Знамени". Самолёт по...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:42</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n9.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">На площади Победы в Калуге может измениться место пешеходного перехода</a>
+                                                    <p class="post-text">Специалисты предлагают перенести зебру для безопасности пешеходов, сообщил городской голова Калуги Дмитрий Денисов. Градоначальник поручил уделить особое внимание подготовке к...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Сергей СЫЧЁВ</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>16.08.2023 17:41</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n10.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Автомобили</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">За неделю более 50 тысяч раз в Калужской области автолюбители нарушили ПДД</a>
+                                                    <p class="post-text">Самым частым нарушением стало превышение скорости — 33245 раз. Об этом сообщили в Центре безопасности дорожного движения Калужской области. Более...</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>29.04.2024 14:00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="post d-flex">
+                                            <a href="#">
+                                                <img src="assets/img/png/n11.png" alt="" class="post-img">
+                                            </a>
+                                            <div class="d-flex flex-column justify-content-between">
+                                                <div class="">
+                                                    <div class="d-flex flex-wrap">
+                                                        <div class="hashtag">Новости</div>
+                                                        <div class="hashtag">Общество</div>
+                                                    </div>
+                                                    <a href="#" class="post-link">На месте украденного космонавтика в калужском парке появился новый</a>
+                                                    <p class="post-text">Копию космонавтика-офтальмолога установили на прежнем месте. Об этом сообщил корреспондент "Знамени". На фигурку уже приходят посмотреть калужане и гости города....</p>
+                                                </div>
+                                                <div class="d-flex align-items-center position-relative z-2">
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/login2.svg" alt="">
+                                                        <span>Антонина Кондратенко</span>
+                                                    </div>
+                                                    <div class="circle"></div>
+                                                    <div class="info">
+                                                        <img src="assets/img/svg/time2.svg" alt="">
+                                                        <span>09.02.2024 12:46</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="controls d-flex align-items-center justify-content-between">
+                                <div class="pagination-box d-flex align-items-center">
+                                    <span class="d-none d-sm-block">Страница</span>
+                                    <div class="pagination">
+                                        <div class="pagination-head d-flex align-items-center justify-content-between">
+                                            <span class="bullet-active">1</span>
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8.71655 0.232035C8.85799 0.0833867 9.04899 0 9.24803 0C9.44708 0 9.63807 0.0833867 9.77951 0.232035C9.84935 0.305029 9.9048 0.392037 9.94265 0.487995C9.98051 0.583952 10 0.686942 10 0.790971C10 0.895001 9.98051 0.99799 9.94265 1.09395C9.9048 1.18991 9.84935 1.27691 9.77951 1.34991L5.53202 5.76833C5.39026 5.91677 5.19913 6 5 6C4.80087 6 4.60974 5.91677 4.46798 5.76833L0.220486 1.34991C0.150654 1.27691 0.0951987 1.18991 0.057346 1.09395C0.0194934 0.99799 0 0.895001 0 0.790971C0 0.686942 0.0194934 0.583952 0.057346 0.487995C0.0951987 0.392037 0.150654 0.305029 0.220486 0.232035C0.361925 0.0833867 0.552923 0 0.751966 0C0.951008 0 1.14201 0.0833867 1.28345 0.232035L5.00163 3.8556L8.71655 0.232035Z" fill="#333333"/>
+                                            </svg>
+                                        </div>
+                                        <div class="pagination-body">
+                                            <ul class="bullets">
+                                                <li class="bullet">1</li>
+                                                <li class="bullet">2</li>
+                                                <li class="bullet">3</li>
+                                                <li class="bullet">4</li>
+                                                <li class="bullet">5</li>
+                                                <li class="bullet">6</li>
+                                                <li class="bullet">7</li>
+                                                <li class="bullet">8</li>
+                                                <li class="bullet">9</li>
+                                                <li class="bullet">10</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <span>из <span class="all-bullet">10</span></span>
+                                </div>
+
+                                <div class="swiper-btn d-flex">
+                                    <div class="prev swiper-posts-prev">
+                                        <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.698854 8.80131L11.1863 16.8918C11.4472 17.0893 11.566 17.0089 11.4517 16.7122L8.66766 8.98097C8.55339 8.68423 8.55446 8.20335 8.67005 7.90703L11.4493 0.288454C11.5649 -0.007834 11.4461 -0.089175 11.1839 0.106804L0.701247 8.08862C0.439061 8.28457 0.43799 8.60369 0.698854 8.80131Z" fill="#E1372C"/>
+                                        </svg>
+                                    </div>
+                                    <div class="next swiper-posts-next">
+                                        <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.3011 8.19869L0.813666 0.108235C0.552833 -0.0893507 0.433969 -0.00892927 0.548299 0.287805L3.33234 8.01903C3.44661 8.31577 3.44554 8.79665 3.32995 9.09296L0.550691 16.7115C0.435101 17.0078 0.55387 17.0892 0.816088 16.8932L11.2988 8.91138C11.5609 8.71543 11.562 8.39631 11.3011 8.19869Z" fill="#E1372C"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="block2 m-0 p-0 bg-transparent">
+            <div class="container position-relative z-2">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="title-text text-center">Вы могли пропустить</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <div class="block2-item">
+                            <img src="assets/img/png/p1.png" alt="" class="item-img">
+                            <div class="item-info">
+                                <div class="d-flex flex-wrap">
+                                    <div class="hashtag">Новости</div>
+                                    <div class="hashtag">ЖКХ</div>
+                                    <div class="hashtag">Статьи</div>
+                                </div>
+                                <a href="#" class="item-link">С 10 мая в Калуге на Площади Победы начнётся ремонт</a>
+                            </div>
+                        </div>
+                        <div class="block2-item">
+                            <img src="assets/img/png/p2.png" alt="" class="item-img">
+                            <div class="item-info">
+                                <div class="d-flex flex-wrap">
+                                    <div class="hashtag">Новости</div>
+                                    <div class="hashtag">Проишествия</div>
+                                </div>
+                                <a href="#" class="item-link">В Калуге на маршрут №29 выйдут новые автобусы с 1 июня</a>
+                            </div>
+                        </div>
+                        <div class="block2-item">
+                            <img src="assets/img/png/p3.png" alt="" class="item-img">
+                            <div class="item-info">
+                                <div class="d-flex flex-wrap">
+                                    <div class="hashtag">Новости</div>
+                                </div>
+                                <a href="#" class="item-link">После вмешательства прокуратуры стало светлее у детсада в Тарусском районе</a>
+                            </div>
+                        </div>
+                        <div class="block2-item">
+                            <img src="assets/img/png/p4.png" alt="" class="item-img">
+                            <div class="item-info">
+                                <div class="d-flex flex-wrap">
+                                    <div class="hashtag">Здоровье</div>
+                                    <div class="hashtag">Новости</div>
+                                </div>
+                                <a href="#" class="item-link">Житель Думиничского района спьяну до смерти избил приятеля</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block4 ">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <h2 class="title-text text-center">Задай вопрос</h2>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12 d-flex justify-content-between flex-wrap">
+                        <div class="block4-box d-flex flex-column flex-md-row">
+                            <img src="assets/img/png/block4.png" alt="" class="block4-img">
+                            <div class="box-info d-flex flex-column justify-content-between">
+                                <div class="left">
+                                    <h6 class="left-title">А кто ещё туда поедет?</h6>
+                                    <p class="left-text">Мы стремимся жить в условиях верховенства закона, что само по себе без знания его невозможно </p>
+                                    <p class="left-text">С вопросами права мы сталкиваемся ежедневно: от бытовых мелочей при покупке в магазине до оформления сделок с землей и имуществом.</p>
+                                </div>
+                                <div class="sub">
+                                    <p>На ваш вопрос ответил</p>
+                                    <div class="d-flex align-items-center position-relative z-2">
+                                        <div class="info">
+                                            <img src="assets/img/svg/login2.svg" alt="">
+                                            <span>Артур Томилко</span>
+                                        </div>
+                                        <div class="circle"></div>
+                                        <div class="info">
+                                            <img src="assets/img/svg/time2.svg" alt="">
+                                            <span>18 минут назад</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block4-items d-flex flex-md-column justify-content-between">
+                            <div class="block4-item d-flex flex-column align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="hashtag">Задай вопрос</div>
+                                    <p>Насколько дорого обойдутся цветы калужанам на 8 Марта?</p>
+                                </div>
+                                <div class="d-flex align-items-center position-relative z-2">
+                                    <div class="info">
+                                        <img src="assets/img/svg/login2.svg" alt="">
+                                        <span>Ксения Куликова</span>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="info">
+                                        <img src="assets/img/svg/time2.svg" alt="">
+                                        <span>06.03.24</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block4-item d-flex flex-column align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="hashtag">Задай вопрос</div>
+                                    <p>Что сказал Путин в обращении к Федеральному Собранию?</p>
+                                </div>
+                                <div class="d-flex align-items-center position-relative z-2">
+                                    <div class="info">
+                                        <img src="assets/img/svg/login2.svg" alt="">
+                                        <span>Антонина Кондратенко</span>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="info">
+                                        <img src="assets/img/svg/time2.svg" alt="">
+                                        <span>29.02.2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block4-item d-flex flex-column align-items-start justify-content-between">
+                                <div class="d-flex flex-column align-items-start">
+                                    <div class="hashtag">Задай вопрос</div>
+                                    <p>Можно ли взыскать ущерб если калужанина покусала собака?</p>
+                                </div>
+                                <div class="d-flex align-items-center position-relative z-2">
+                                    <div class="info">
+                                        <img src="assets/img/svg/login2.svg" alt="">
+                                        <span>Антонина Кондратенко</span>
+                                    </div>
+                                    <div class="circle"></div>
+                                    <div class="info">
+                                        <img src="assets/img/svg/time2.svg" alt="">
+                                        <span>30.01.2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block5 m-0 pb-4">
+            <div class="container">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <h2 class="title-text text-center">Материалы</h2>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <div class="swiper swiper-block5">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="block5-item">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/pdf1.png" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="published d-flex align-items-center">
+                                                <img src="assets/img/svg/time-black.svg" alt="" class="time">
+                                                <p>
+                                                    <span>24 апреля 2024 год</span>
+                                                    <span class="number">№15</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="item-name">Газета «Знамя» в PDF </p>
+                                        <a href="#" class="item-link d-flex align-items-center justify-content-center">
+                                            <span>Смотреть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.4998 5.70005C8.16255 5.70005 8.6998 5.16279 8.6998 4.50005C8.6998 3.83731 8.16255 3.30005 7.4998 3.30005C6.83706 3.30005 6.2998 3.83731 6.2998 4.50005C6.2998 5.16279 6.83706 5.70005 7.4998 5.70005Z" fill="#E1372C"/>
+                                                <path d="M14.05 4.25C13.4 3.1 12.45 2.2 11.35 1.5C10.15 0.85 8.85 0.5 7.5 0.5C6.15 0.5 4.85 0.85 3.65 1.55C2.55 2.2 1.6 3.15 0.95 4.3C0.85 4.45 0.85 4.65 0.95 4.8C1.6 5.95 2.55 6.85 3.65 7.55C4.8 8.25 6.15 8.6 7.5 8.6C8.85 8.6 10.15 8.25 11.35 7.55C12.45 6.9 13.4 5.95 14.05 4.8C14.1 4.6 14.1 4.4 14.05 4.25ZM7.5 6.7C6.3 6.7 5.3 5.7 5.3 4.5C5.3 3.3 6.3 2.3 7.5 2.3C8.7 2.3 9.7 3.3 9.7 4.5C9.7 5.7 8.7 6.7 7.5 6.7Z" fill="#E1372C"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="block5-item">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/pdf2.png" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="published d-flex align-items-center">
+                                                <img src="assets/img/svg/time-black.svg" alt="" class="time">
+                                                <p>
+                                                    <span>17 апреля 2024 год</span>
+                                                    <span class="number">№11</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="item-name">Газета «Знамя» в PDF </p>
+                                        <a href="#" class="item-link d-flex align-items-center justify-content-center">
+                                            <span>Смотреть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.4998 5.70005C8.16255 5.70005 8.6998 5.16279 8.6998 4.50005C8.6998 3.83731 8.16255 3.30005 7.4998 3.30005C6.83706 3.30005 6.2998 3.83731 6.2998 4.50005C6.2998 5.16279 6.83706 5.70005 7.4998 5.70005Z" fill="#E1372C"/>
+                                                <path d="M14.05 4.25C13.4 3.1 12.45 2.2 11.35 1.5C10.15 0.85 8.85 0.5 7.5 0.5C6.15 0.5 4.85 0.85 3.65 1.55C2.55 2.2 1.6 3.15 0.95 4.3C0.85 4.45 0.85 4.65 0.95 4.8C1.6 5.95 2.55 6.85 3.65 7.55C4.8 8.25 6.15 8.6 7.5 8.6C8.85 8.6 10.15 8.25 11.35 7.55C12.45 6.9 13.4 5.95 14.05 4.8C14.1 4.6 14.1 4.4 14.05 4.25ZM7.5 6.7C6.3 6.7 5.3 5.7 5.3 4.5C5.3 3.3 6.3 2.3 7.5 2.3C8.7 2.3 9.7 3.3 9.7 4.5C9.7 5.7 8.7 6.7 7.5 6.7Z" fill="#E1372C"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="block5-item">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/pdf3.png" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="published d-flex align-items-center">
+                                                <img src="assets/img/svg/time-black.svg" alt="" class="time">
+                                                <p>
+                                                    <span>10 апреля 2024 год</span>
+                                                    <span class="number">№13</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="item-name">Газета «Знамя» в PDF </p>
+                                        <a href="#" class="item-link d-flex align-items-center justify-content-center">
+                                            <span>Смотреть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.4998 5.70005C8.16255 5.70005 8.6998 5.16279 8.6998 4.50005C8.6998 3.83731 8.16255 3.30005 7.4998 3.30005C6.83706 3.30005 6.2998 3.83731 6.2998 4.50005C6.2998 5.16279 6.83706 5.70005 7.4998 5.70005Z" fill="#E1372C"/>
+                                                <path d="M14.05 4.25C13.4 3.1 12.45 2.2 11.35 1.5C10.15 0.85 8.85 0.5 7.5 0.5C6.15 0.5 4.85 0.85 3.65 1.55C2.55 2.2 1.6 3.15 0.95 4.3C0.85 4.45 0.85 4.65 0.95 4.8C1.6 5.95 2.55 6.85 3.65 7.55C4.8 8.25 6.15 8.6 7.5 8.6C8.85 8.6 10.15 8.25 11.35 7.55C12.45 6.9 13.4 5.95 14.05 4.8C14.1 4.6 14.1 4.4 14.05 4.25ZM7.5 6.7C6.3 6.7 5.3 5.7 5.3 4.5C5.3 3.3 6.3 2.3 7.5 2.3C8.7 2.3 9.7 3.3 9.7 4.5C9.7 5.7 8.7 6.7 7.5 6.7Z" fill="#E1372C"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="block5-item">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="assets/img/png/pdf4.png" alt="" class="item-img">
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="published d-flex align-items-center">
+                                                <img src="assets/img/svg/time-black.svg" alt="" class="time">
+                                                <p>
+                                                    <span>3 апреля 2024 год</span>
+                                                    <span class="number">№12</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p class="item-name">Газета «Знамя» в PDF </p>
+                                        <a href="#" class="item-link d-flex align-items-center justify-content-center">
+                                            <span>Смотреть</span>
+                                            <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7.4998 5.70005C8.16255 5.70005 8.6998 5.16279 8.6998 4.50005C8.6998 3.83731 8.16255 3.30005 7.4998 3.30005C6.83706 3.30005 6.2998 3.83731 6.2998 4.50005C6.2998 5.16279 6.83706 5.70005 7.4998 5.70005Z" fill="#E1372C"/>
+                                                <path d="M14.05 4.25C13.4 3.1 12.45 2.2 11.35 1.5C10.15 0.85 8.85 0.5 7.5 0.5C6.15 0.5 4.85 0.85 3.65 1.55C2.55 2.2 1.6 3.15 0.95 4.3C0.85 4.45 0.85 4.65 0.95 4.8C1.6 5.95 2.55 6.85 3.65 7.55C4.8 8.25 6.15 8.6 7.5 8.6C8.85 8.6 10.15 8.25 11.35 7.55C12.45 6.9 13.4 5.95 14.05 4.8C14.1 4.6 14.1 4.4 14.05 4.25ZM7.5 6.7C6.3 6.7 5.3 5.7 5.3 4.5C5.3 3.3 6.3 2.3 7.5 2.3C8.7 2.3 9.7 3.3 9.7 4.5C9.7 5.7 8.7 6.7 7.5 6.7Z" fill="#E1372C"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="./index.html" class="footer-logo">
+                        <img src="assets/img/svg/logo.svg" alt="" class="d-none d-xl-block">
+                        <img src="assets/img/svg/logo2.svg" alt="" class="d-xl-none">
+                    </a>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div class="footer-text">
+                            <p >© Государственное автономное учреждение Калужской области Медиакорпорация «Калуга Сегодня», 2008 — 2023. Сетевое издание Знамя.Калуга (znamkaluga.ru)</p> 
+                            <p>Зарегистрировано Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций, регистрационный номер СМИ Эл ФС77-78105 от 6 марта 2020 г.</p>   
+                        </div>
+                            <div class="footer-text">
+                            <p>Отдельные публикации могут содержать информацию, <br> не предназначенную для пользователей до 16 лет.</p>
+                            <p>На информационном ресурсе применяются рекомендательные технологии.</p>
+                        </div>
+                    </div>
+                    <ul class="footer-nav d-flex flex-wrap">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Спецпроекты</a></li>
+                        <li><a href="#">Задай вопрос</a></li>
+                        <li><a href="#">Досье</a></li>
+                        <li><a href="#">Газета в PDF</a></li>
+                    </ul>
+                    <div class="footer-sub">
+                        Сетевое издание <a href="#">"Знамя.Калуга"</a> © 2008-2024 | <a href="#">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="spProjects">
+        <div class="">
+            <img src="assets/img/png/sp1.png" alt="" class="spProjects-img">
+            <img src="assets/img/png/sp2.png" alt="" class="spProjects-img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="spProjects-head d-flex justify-content-center align-items-center">
+                        <h6 class="head-title">Спецпроекты</h6>
+                        <img src="assets/img/svg/arrow2.svg" alt="" class="arrow">
+                    </div>
+                    <div class="spProjects-body">
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p1.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Калуга. Преображение</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p2.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Открытые небеса</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p3.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Живущие рядом</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p4.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Заповедник чудес</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p5.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Оперативное вмешательство</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p6.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">На колесах</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p7.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Фотовыставки</p>
+                        </div>
+                        <div class="sp-item position-relative d-flex align-items-center">
+                            <a href="#" class="position-absolute top-0 start-0 w-100 h-100"></a>
+                            <img src="assets/img/png/s-p8.png" alt="" class="sp-item__img">
+                            <p class="sp-item__text">Молодые и красивые</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/plugin/swiper.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/post.js"></script>
+</body>
+</html>
