@@ -279,6 +279,15 @@
 }
 
 @media (max-width: 576px) {
+
+  header {
+    .header-logo {
+      img {
+        width: 115px;
+      }
+    }
+  }
+
   main {
     background: #fff;
     .block1 {
@@ -363,6 +372,9 @@
     padding: 40px 0;
     .footer-logo {
       margin-bottom: 24px;
+      img {
+        width: 130px;
+      }
     }
     .footer-text {
       font-size: 10px;

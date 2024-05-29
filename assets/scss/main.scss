@@ -86,6 +86,11 @@ body {
   header {
     padding: 24px 0;
     position: relative;
+    .header-logo {
+      img {
+        width: 185px;
+      }
+    }
     .search {
       position: relative;
       .search-inp {
@@ -1329,6 +1334,9 @@ body {
     .footer-logo {
       display: flex;
       margin-bottom: 30px;
+      img {
+        width: 185px;
+      }
     }
     .footer-text {
       font-size: 12px;
